@@ -22,7 +22,7 @@ public class AuthenticatorApplication {
 		String companyName = "Vivanet";
 		String barCodeUrl = Utils.getGoogleAuthenticatorBarCode(secretKey, email, companyName);
 		// System.out.println(barCodeUrl);
-		Utils.createQRCode(barCodeUrl, "qrcode/QRCode.png", 400, 400);
+		Utils.createQRCode(barCodeUrl, "QRCode.png", 400, 400);
 
 		System.out.print("Please enter 2fA code here -> ");
 		Scanner scanner = new Scanner(System.in);
